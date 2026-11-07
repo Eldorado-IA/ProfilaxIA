@@ -1,0 +1,33 @@
+{
+  "case_id": "CT05",
+  "test": "test_ct05_no_evidence_returns_reformulation_guidance",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/verificacoes",
+    "json": {
+      "pergunta": "A vacinação reduz a transmissão?"
+    }
+  },
+  "response": {
+    "status_code": 404,
+    "json": {
+      "erro": {
+        "tipo": "sem_evidencias",
+        "mensagem": "Não foram encontradas evidências suficientes para essa pergunta. Tente reformulá-la com outros termos."
+      }
+    }
+  },
+  "external_calls": [
+    {
+      "endpoint": "esearch.fcgi",
+      "params": {
+        "db": "pubmed",
+        "term": "\"vaccination\" AND \"free full text\"[sb]",
+        "retmax": 20,
+        "retmode": "json",
+        "sort": "relevance"
+      }
+    }
+  ],
+  "scope": "Actual API, validation, orchestration and XML parsing with simulated external NLP, classifier and HTTP responses"
+}
