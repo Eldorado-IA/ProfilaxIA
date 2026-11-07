@@ -1,0 +1,15 @@
+# ignora arquivos gerados do projeto, mas mantém os dados do treinamento
+data/raw/*.xlsx
+resultados/**/*.png
+.DS_Store
+
+# ambiente
+.env
+node_modules/
+dist/
+__pycache__/
+.venv/
+.venv-qa/
+.pytest_cache/
+*.py[cod]
+*.tsbuildinfo
