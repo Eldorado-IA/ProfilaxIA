@@ -1,0 +1,22 @@
+{
+  "case_id": "CT03",
+  "test": "test_ct03_numeric_input_is_rejected_before_search",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/verificacoes",
+    "json": {
+      "pergunta": "123456"
+    }
+  },
+  "response": {
+    "status_code": 422,
+    "json": {
+      "erro": {
+        "tipo": "sem_letras",
+        "mensagem": "Sua entrada tem só números ou símbolos. Tente algo como: 'A vitamina D previne a COVID-19?'"
+      }
+    }
+  },
+  "external_calls": [],
+  "scope": "Actual API, validation, orchestration and XML parsing with simulated external NLP, classifier and HTTP responses"
+}
