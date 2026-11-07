@@ -1,0 +1,96 @@
+{
+  "dataset": {
+    "path": "data/raw/healthver_preparado_completo_3classes.xlsx",
+    "sha256": "82cacfb0db351c0fc02692f03efb68b7ed8acb7583bcf4b4dd2d88b50b75f19f",
+    "rows": 13303,
+    "columns": [
+      "id",
+      "evidence",
+      "claim",
+      "label",
+      "topic_ip",
+      "label_multiclasse"
+    ],
+    "claims_literal": 1854,
+    "claims_normalized": 1851,
+    "evidences_literal": 737,
+    "duplicate_pairs_literal": 0,
+    "duplicate_pairs_normalized": 0,
+    "labels": {
+      "0": 4976,
+      "1": 3221,
+      "2": 5106
+    }
+  },
+  "arrays": [
+    {
+      "path": "data/processed/X_test_emb.npy",
+      "sha256": "07ea15b0ff62e9c69dfc840ef8d9a2fdde8fbea8a537775b2676218bd3366a91",
+      "size_bytes": 25534592,
+      "shape": [
+        2078,
+        3072
+      ],
+      "dtype": "float32",
+      "git_lfs_pointer": false
+    },
+    {
+      "path": "data/processed/X_train_emb.npy",
+      "sha256": "dde5d36910338adad054e85092651f767a2289946fc79f11d2050f833b88a5bd",
+      "size_bytes": 115851392,
+      "shape": [
+        9428,
+        3072
+      ],
+      "dtype": "float32",
+      "git_lfs_pointer": false
+    },
+    {
+      "path": "data/processed/X_val_emb.npy",
+      "sha256": "cec64f2d779232a12b55c19914c108286074344cbd24163caad843030646f0e9",
+      "size_bytes": 22081664,
+      "shape": [
+        1797,
+        3072
+      ],
+      "dtype": "float32",
+      "git_lfs_pointer": false
+    },
+    {
+      "path": "data/processed/y_test.npy",
+      "sha256": "c00fb82a98140c8c73a82c437f90eeedd1dfd4f45559607fdb51a4a846944be6",
+      "size_bytes": 16752,
+      "shape": [
+        2078
+      ],
+      "dtype": "int64",
+      "git_lfs_pointer": false
+    },
+    {
+      "path": "data/processed/y_train.npy",
+      "sha256": "4fd240ef755533441557a0c6988ff3e56eb0e2b98987f9c845b89b63fd3c7aed",
+      "size_bytes": 75552,
+      "shape": [
+        9428
+      ],
+      "dtype": "int64",
+      "git_lfs_pointer": false
+    },
+    {
+      "path": "data/processed/y_val.npy",
+      "sha256": "f2987c5d32d6046991e7b4bd4be294c1474d1cbe7cce7bf946f80163754e9ddc",
+      "size_bytes": 14504,
+      "shape": [
+        1797
+      ],
+      "dtype": "int64",
+      "git_lfs_pointer": false
+    }
+  ],
+  "model": {
+    "path": "data/processed/modelo_mlp_profilaxia.pkl",
+    "sha256": "17d20c5fe801fe97896b83cbd72ddb75202bda025010818e34485c0b4a4da226",
+    "size_bytes": 9848636
+  },
+  "scope": "Matching counts alone does not prove row-level alignment of saved arrays."
+}
