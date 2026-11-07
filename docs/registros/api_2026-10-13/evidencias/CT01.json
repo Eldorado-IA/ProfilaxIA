@@ -1,0 +1,103 @@
+{
+  "case_id": "CT01",
+  "test": "test_ct01_query_returns_grouped_evidence_and_sources",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/verificacoes",
+    "json": {
+      "pergunta": "  A vacinação reduz a transmissão?  "
+    }
+  },
+  "response": {
+    "status_code": 200,
+    "json": {
+      "pergunta": "A vacinação reduz a transmissão?",
+      "pergunta_traduzida": "Does vaccination reduce transmission?",
+      "claim": "Vaccination reduces transmission.",
+      "total": 3,
+      "evidencias": {
+        "refutam": [
+          {
+            "pmid": "1003",
+            "pmcid": "PMC1003",
+            "titulo": "Synthetic fixture article 1003",
+            "autores": "Test Author",
+            "ano": "2026",
+            "fonte": "PubMed",
+            "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1003/",
+            "trecho": "Synthetic evidence about vaccination for PMC1003; this is test data, not a medical conclusion."
+          }
+        ],
+        "suportam": [
+          {
+            "pmid": "1002",
+            "pmcid": "PMC1002",
+            "titulo": "Synthetic fixture article 1002",
+            "autores": "Test Author",
+            "ano": "2026",
+            "fonte": "PubMed",
+            "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1002/",
+            "trecho": "Synthetic evidence about vaccination for PMC1002; this is test data, not a medical conclusion."
+          }
+        ],
+        "neutras": [
+          {
+            "pmid": "1001",
+            "pmcid": "PMC1001",
+            "titulo": "Synthetic fixture article 1001",
+            "autores": "Test Author",
+            "ano": "2026",
+            "fonte": "PubMed",
+            "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1001/",
+            "trecho": "Synthetic evidence about vaccination for PMC1001; this is test data, not a medical conclusion."
+          }
+        ]
+      }
+    }
+  },
+  "external_calls": [
+    {
+      "endpoint": "esearch.fcgi",
+      "params": {
+        "db": "pubmed",
+        "term": "\"vaccination\" AND \"free full text\"[sb]",
+        "retmax": 20,
+        "retmode": "json",
+        "sort": "relevance"
+      }
+    },
+    {
+      "endpoint": "esummary.fcgi",
+      "params": {
+        "db": "pubmed",
+        "id": "1001,1002,1003",
+        "retmode": "json"
+      }
+    },
+    {
+      "endpoint": "efetch.fcgi",
+      "params": {
+        "db": "pmc",
+        "id": "PMC1001",
+        "retmode": "xml"
+      }
+    },
+    {
+      "endpoint": "efetch.fcgi",
+      "params": {
+        "db": "pmc",
+        "id": "PMC1002",
+        "retmode": "xml"
+      }
+    },
+    {
+      "endpoint": "efetch.fcgi",
+      "params": {
+        "db": "pmc",
+        "id": "PMC1003",
+        "retmode": "xml"
+      }
+    }
+  ],
+  "scope": "Actual API, validation, orchestration and XML parsing with simulated external NLP, classifier and HTTP responses"
+}

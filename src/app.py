@@ -14,8 +14,7 @@ warnings.filterwarnings("ignore")
 
 from sentence_transformers import SentenceTransformer
 
-NCBI_API_KEY = "0ee2148580f3394873b20961bddd4488b608"
-
+NCBI_API_KEY = os.getenv("NCBI_API_KEY", "")
 original_get = requests.get
 
 # interpcetor

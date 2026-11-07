@@ -1,0 +1,43 @@
+{
+  "preparation_date": "2026-11-07",
+  "source_commit": "c3e3b63fdc61a2934da6729cfe7730eb375ed97a",
+  "api_tests": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "scope": "controlled API integration and contract"
+  },
+  "frontend": {
+    "first_build": "TS2591 process type missing",
+    "fix": [
+      "@types/node@22",
+      "compilerOptions.types includes node"
+    ],
+    "final_build_exit_code": 0,
+    "node": "24.22.1",
+    "assets": [
+      {
+        "path": "dist/assets/index-CM7iKsM0.js",
+        "size_bytes": 268862,
+        "sha256": "ffac298bbcbd99564e661c9389de2dd69f3367c9a5080664acc09a077266810d"
+      },
+      {
+        "path": "dist/assets/index-uEvxNwde.css",
+        "size_bytes": 5310,
+        "sha256": "795e77751f220b4fdced666584725ad3569922d785278717f2cbd9404a3009e8"
+      },
+      {
+        "path": "dist/index.html",
+        "size_bytes": 675,
+        "sha256": "bf9a5e86628ed5635d5033653f466fc75b058c33855568de1b2f5ddce64db21c"
+      }
+    ]
+  },
+  "python_syntax": "passed",
+  "markdown_links": {
+    "errors": []
+  },
+  "citation_metadata": "required fields checked; collective authorship",
+  "workflow": "YAML structure checked; not run on remote GitHub",
+  "full_live_stack_executed": false
+}

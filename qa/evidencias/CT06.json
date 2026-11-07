@@ -1,0 +1,33 @@
+{
+  "case_id": "CT06",
+  "test": "test_ct06_pubmed_timeout_returns_controlled_error",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/verificacoes",
+    "json": {
+      "pergunta": "A vacinação reduz a transmissão?"
+    }
+  },
+  "response": {
+    "status_code": 502,
+    "json": {
+      "erro": {
+        "tipo": "pubmed_indisponivel",
+        "mensagem": "Não foi possível consultar o PubMed agora. Tente novamente."
+      }
+    }
+  },
+  "external_calls": [
+    {
+      "endpoint": "esearch.fcgi",
+      "params": {
+        "db": "pubmed",
+        "term": "\"vaccination\" AND \"free full text\"[sb]",
+        "retmax": 20,
+        "retmode": "json",
+        "sort": "relevance"
+      }
+    }
+  ],
+  "scope": "Actual API, validation, orchestration and XML parsing with simulated external NLP, classifier and HTTP responses"
+}

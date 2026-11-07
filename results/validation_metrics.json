@@ -1,0 +1,85 @@
+{
+  "evaluated_at": "2026-11-07T22:32:27.126633+00:00",
+  "evaluation": "saved fixed validation split",
+  "samples": 1797,
+  "model_type": "MLPClassifier",
+  "classes": [
+    "SUPPORTED",
+    "REFUTED",
+    "NEUTRAL"
+  ],
+  "accuracy": 0.6922648859209795,
+  "f1_macro": 0.667056760578488,
+  "recall_macro": 0.663861982508695,
+  "classification_report": {
+    "SUPPORTED": {
+      "precision": 0.6115942028985507,
+      "recall": 0.6884176182707994,
+      "f1-score": 0.6477359938603223,
+      "support": 613.0
+    },
+    "REFUTED": {
+      "precision": 0.6098265895953757,
+      "recall": 0.5096618357487923,
+      "f1-score": 0.5552631578947368,
+      "support": 414.0
+    },
+    "NEUTRAL": {
+      "precision": 0.8028909329829172,
+      "recall": 0.7935064935064935,
+      "f1-score": 0.798171129980405,
+      "support": 770.0
+    },
+    "accuracy": 0.6922648859209795,
+    "macro avg": {
+      "precision": 0.674770575158948,
+      "recall": 0.663861982508695,
+      "f1-score": 0.667056760578488,
+      "support": 1797.0
+    },
+    "weighted avg": {
+      "precision": 0.6931560783896179,
+      "recall": 0.6922648859209795,
+      "f1-score": 0.690891976455042,
+      "support": 1797.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      422,
+      99,
+      92
+    ],
+    [
+      145,
+      211,
+      58
+    ],
+    [
+      123,
+      36,
+      611
+    ]
+  ],
+  "artifacts": [
+    {
+      "path": "data/processed/modelo_mlp_profilaxia.pkl",
+      "sha256": "17d20c5fe801fe97896b83cbd72ddb75202bda025010818e34485c0b4a4da226"
+    },
+    {
+      "path": "data/processed/X_val_emb.npy",
+      "sha256": "cec64f2d779232a12b55c19914c108286074344cbd24163caad843030646f0e9"
+    },
+    {
+      "path": "data/processed/y_val.npy",
+      "sha256": "f2987c5d32d6046991e7b4bd4be294c1474d1cbe7cce7bf946f80163754e9ddc"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  },
+  "scope": "No retraining, no test-set evaluation and no live retrieval or translation."
+}

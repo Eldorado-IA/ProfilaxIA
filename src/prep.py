@@ -39,7 +39,7 @@ df_test = df_temp.iloc[test_idx]
 print(f"divisao segura: treino ({len(df_train)}), val ({len(df_val)}), teste ({len(df_test)})")
 
 # SBERT
-modelo_sbert = SentenceTransformer('all-mpnet-base-V2')
+modelo_sbert = SentenceTransformer('all-mpnet-base-v2')
 
 def gerar_features_nli(df_subset, nome_conjunto):
     print(f"processando {nome_conjunto}...")

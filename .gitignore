@@ -8,3 +8,8 @@ resultados/**/*.png
 node_modules/
 dist/
 __pycache__/
+.venv/
+.venv-qa/
+.pytest_cache/
+*.py[cod]
+*.tsbuildinfo
