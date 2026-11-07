@@ -8,7 +8,7 @@ A autoria coletiva abrange o trabalho de concepção, preparação de dados, mod
 
 A base desta organização é a branch `modelo-producao` de [19loren/project-null](https://github.com/19loren/project-null/tree/modelo-producao), no commit `c3e3b63fdc61a2934da6729cfe7730eb375ed97a`.
 
-O histórico Git original foi preservado. Os autores dos commits representam os registros existentes de implementação, não necessariamente todos os participantes do trabalho acadêmico. Os documentos originais estão em `docs/entrega`, e os registros dos testes da API de outubro de 2026, em `docs/registros`.
+O histórico Git original foi preservado. Os documentos originais estão em `docs/entrega`, e os registros dos testes da API de outubro de 2026, em `docs/registros`.
 
 ## Referência acadêmica
 
