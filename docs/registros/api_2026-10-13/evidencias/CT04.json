@@ -1,0 +1,22 @@
+{
+  "case_id": "CT04",
+  "test": "test_ct04_open_question_returns_guidance",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/verificacoes",
+    "json": {
+      "pergunta": "Qual o melhor tratamento?"
+    }
+  },
+  "response": {
+    "status_code": 422,
+    "json": {
+      "erro": {
+        "tipo": "pergunta_invalida",
+        "mensagem": "Não consegui transformar sua pergunta em uma afirmação a ser verificada. O sistema trabalha com perguntas de sim ou não. Em vez de 'Qual o melhor tratamento para a COVID-19?', pergunte, por exemplo, 'A ivermectina trata a COVID-19?'."
+      }
+    }
+  },
+  "external_calls": [],
+  "scope": "Actual API, validation, orchestration and XML parsing with simulated external NLP, classifier and HTTP responses"
+}
