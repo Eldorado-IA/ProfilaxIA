@@ -1,0 +1,22 @@
+{
+  "case_id": "CT02",
+  "test": "test_ct02_empty_question_is_rejected_before_search",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/verificacoes",
+    "json": {
+      "pergunta": "   "
+    }
+  },
+  "response": {
+    "status_code": 422,
+    "json": {
+      "erro": {
+        "tipo": "vazia",
+        "mensagem": "Digite uma pergunta para começar."
+      }
+    }
+  },
+  "external_calls": [],
+  "scope": "Actual API, validation, orchestration and XML parsing with simulated external NLP, classifier and HTTP responses"
+}
