@@ -4,7 +4,18 @@ type: software
 title: ProfilaxIA
 repository-code: https://github.com/Eldorado-IA/ProfilaxIA
 authors:
-  - name: Equipe Project NULL
+  - given-names: "Gabriella"
+    family-names: "Andrade Silva"
+  - given-names: "Loren"
+    family-names: "Tavolaro"
+  - given-names: "Luís Augusto"
+    family-names: "Ferreira"
+  - given-names: "Prisciele Vitória"
+    family-names: "de Souza"
+  - given-names: "Marcia Regina"
+    family-names: "Stankiwich"
+  - given-names: "Natalia"
+    family-names: "Silva"
 abstract: "Protótipo acadêmico para recuperação de evidências científicas e classificação de pares de alegação e evidência em saúde, desenvolvido no First Challenge da Residência em IA do Instituto ELDORADO em parceria com a PUC Campinas."
 keywords:
   - scientific evidence

@@ -4,6 +4,15 @@ Protótipo acadêmico para recuperar evidências científicas e classificar sua 
 
 O usuário apresenta uma pergunta de sim ou não. A aplicação gera uma alegação, recupera artigos no PubMed/PMC e organiza os trechos encontrados em três classes: **suporta**, **refuta** e **neutro**. Cada evidência mantém a identificação e o link do artigo de origem.
 
+## Equipe Project NULL
+
+- [Gabriella Andrade Silva](https://github.com/moonienng)
+- [Loren Tavolaro](https://github.com/19loren)
+- [Luís Augusto Ferreira](https://github.com/blackbarth)
+- [Prisciele Vitória de Souza](https://github.com/PriscieleSouza)
+- [Marcia Regina Stankiwich](https://github.com/MarciaStank)
+- [Natalia Silva](https://github.com/Nannnnnnn)
+
 ## Documentação
 
 - [Índice e documentos da entrega](docs/README.md)
