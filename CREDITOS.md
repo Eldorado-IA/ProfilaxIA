@@ -8,7 +8,7 @@ A autoria coletiva abrange o trabalho de concepção, preparação de dados, mod
 
 A base desta organização é a branch `modelo-producao` de [19loren/project-null](https://github.com/19loren/project-null/tree/modelo-producao), no commit `c3e3b63fdc61a2934da6729cfe7730eb375ed97a`.
 
-O histórico Git original foi preservado. Os autores dos commits representam os registros existentes de implementação, não necessariamente todos os participantes do trabalho acadêmico. Os documentos originais estão em `docs/entrega`, e os registros dos testes da API de outubro de 2026, em `docs/registros`.
+O histórico Git original foi preservado. Os documentos originais estão em `docs/entrega`, e os registros dos testes da API de outubro de 2026, em `docs/registros`.
 
 ## Referência acadêmica
 
@@ -23,6 +23,6 @@ O arquivo `CITATION.cff` identifica a autoria coletiva para a versão de softwar
 
 Os créditos e os termos dessas fontes são independentes da autoria do ProfilaxIA.
 
-## Ferramentas de apoio desta revisão
+## Organização e ferramentas de apoio desta revisão
 
-A preparação desta organização documental, dos scripts de verificação e dos testes contou com apoio do ChatGPT/Codex. A ferramenta não integra a lista de autores humanos. O alcance e os resultados efetivamente executados estão registrados em `docs/VERIFICACAO.md` e nos arquivos de evidência; a autoria do projeto permanece coletiva.
+A organização desta entrega e sua publicação no GitHub foram conduzidas por Marcia Stankiwich, com interação, decisões e revisão da própria Marcia e apoio do ChatGPT/Codex na preparação documental, nos scripts de verificação, nos testes e nos procedimentos de envio. Essa etapa resulta da colaboração entre Marcia e a ferramenta; a autoria acadêmica do ProfilaxIA permanece coletiva, da Equipe Project NULL. O alcance e os resultados efetivamente executados estão registrados em `docs/VERIFICACAO.md` e nos arquivos de evidência.

@@ -2,6 +2,10 @@ name: Verificacoes do ProfilaxIA
 
 on:
   push:
+    paths-ignore:
+      - 'docs/**'
+      - '**/*.md'
+      - 'CITATION.cff'
   pull_request:
   workflow_dispatch:
 

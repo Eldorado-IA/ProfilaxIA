@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "Ao utilizar este trabalho, cite a equipe, o título do software e a versão ou commit consultado."
 type: software
 title: ProfilaxIA
+repository-code: https://github.com/Eldorado-IA/ProfilaxIA
 authors:
   - name: Equipe Project NULL
 abstract: "Protótipo acadêmico para recuperação de evidências científicas e classificação de pares de alegação e evidência em saúde, desenvolvido no First Challenge da Residência em IA do Instituto ELDORADO em parceria com a PUC Campinas."
