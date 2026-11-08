@@ -32,7 +32,7 @@ A inspeção da planilha não encontrou pares duplicados literais nem após norm
 
 As quantidades de linhas dos artefatos são compatíveis com o total da planilha: 9.428 de treino, 1.797 de validação e 2.078 de teste, totalizando 13.303. Essa compatibilidade não prova correspondência linha a linha, pois os índices das partições não foram persistidos na entrega original.
 
-Os 13.309 pares dos slides não são a contagem da planilha atual. Não se deve inferir o número de duplicatas removidas apenas pela subtração entre etapas sem o registro de preparação.
+A diferença entre as contagens dos slides e da planilha atual está registrada na tabela. Os registros disponíveis não permitem atribuir essa diferença a uma quantidade específica de duplicatas removidas.
 
 ## Verificação dos arquivos
 

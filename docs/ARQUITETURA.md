@@ -39,7 +39,7 @@ A resposta inclui `pergunta`, `pergunta_traduzida`, `claim`, `total` e `evidenci
 | 502 | `pubmed_indisponivel` | Falha de comunicação ou indisponibilidade externa |
 | 500 | `erro_interno` | Erro não previsto pelo fluxo específico |
 
-O formato é `{"erro":{"tipo":"...","mensagem":"..."}}`. O frontend exibe a mensagem e os estados de carregamento previstos. Os seis testes recuperados não cobrem todas as regras de entrada ou todos os estados da interface.
+O formato é `{"erro":{"tipo":"...","mensagem":"..."}}`. O frontend exibe a mensagem e os estados de carregamento previstos. O escopo da suíte de seis testes está detalhado em [Testes da API](../README_TESTES.md).
 
 ## Dependências externas
 

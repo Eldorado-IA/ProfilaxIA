@@ -1,28 +1,31 @@
-# Autoria e procedência
+# Créditos e referências
 
-O ProfilaxIA foi desenvolvido coletivamente pela **Equipe Project NULL** no First Challenge da Residência em Inteligência Artificial do Instituto ELDORADO em parceria com a PUC Campinas, em 2026.
+## Projeto
 
-A autoria coletiva abrange o trabalho de concepção, preparação de dados, modelagem, implementação, documentação e apresentação realizado pela equipe. Hospedar e organizar o repositório não torna seu mantenedor autor exclusivo do projeto.
+**ProfilaxIA — Equipe Project NULL**
 
-## Histórico do código
+Desenvolvido no First Challenge da Residência em Inteligência Artificial do Instituto ELDORADO em parceria com a PUC Campinas, em 2026.
 
-A base desta organização é a branch `modelo-producao` de [19loren/project-null](https://github.com/19loren/project-null/tree/modelo-producao), no commit `c3e3b63fdc61a2934da6729cfe7730eb375ed97a`.
+## Procedência do código
 
-O histórico Git original foi preservado. Os documentos originais estão em `docs/entrega`, e os registros dos testes da API de outubro de 2026, em `docs/registros`.
+A implementação de referência corresponde à branch `modelo-producao` de [19loren/project-null](https://github.com/19loren/project-null/tree/c3e3b63fdc61a2934da6729cfe7730eb375ed97a), no commit `c3e3b63fdc61a2934da6729cfe7730eb375ed97a`. Os 20 commits dessa versão integram o histórico deste repositório.
 
-## Referência acadêmica
+Os documentos da entrega estão em [`docs/entrega`](docs/README.md), e os registros dos testes da API de outubro de 2026, em [`docs/registros`](docs/registros/api_2026-10-13/relatorio.md).
 
-O arquivo `CITATION.cff` identifica a autoria coletiva para a versão de software. Este repositório não apresenta artigo publicado, DOI próprio ou ordem nominal de autores de artigo. Esses dados devem ser acrescentados quando houver publicação e acordo de autoria da equipe.
+## Organização e ferramentas de apoio
 
-## Fontes de terceiros
+- Organização do repositório e publicação: Marcia Stankiwich.
+- Apoio técnico à documentação, aos scripts de verificação e aos testes: ChatGPT/Codex, da OpenAI.
+
+Os procedimentos e os resultados das verificações estão descritos em [Verificação técnica](docs/VERIFICACAO.md).
+
+## Referências e recursos utilizados
 
 - HealthVer: [artigo na ACL Anthology](https://aclanthology.org/2021.findings-emnlp.297/) e [repositório dos autores](https://github.com/sarrouti/healthver).
-- Artigos recuperados: PubMed e PubMed Central, identificados individualmente nas respostas da API.
+- Recuperação de artigos: PubMed e PubMed Central, com identificação das fontes nas respostas da API.
 - Modelos pré-treinados: `all-mpnet-base-v2` e `Helsinki-NLP/opus-mt-ROMANCE-en`.
-- Bibliotecas: dependências declaradas nos arquivos de requisitos e no frontend.
+- Bibliotecas: dependências declaradas nos arquivos de requisitos e em `frontend/package.json`.
 
-Os créditos e os termos dessas fontes são independentes da autoria do ProfilaxIA.
+## Citação
 
-## Organização e ferramentas de apoio desta revisão
-
-A organização desta entrega e sua publicação no GitHub foram conduzidas por Marcia Stankiwich, com interação, decisões e revisão da própria Marcia e apoio do ChatGPT/Codex na preparação documental, nos scripts de verificação, nos testes e nos procedimentos de envio. Essa etapa resulta da colaboração entre Marcia e a ferramenta; a autoria acadêmica do ProfilaxIA permanece coletiva, da Equipe Project NULL. O alcance e os resultados efetivamente executados estão registrados em `docs/VERIFICACAO.md` e nos arquivos de evidência.
+Os metadados para citação do software estão em [CITATION.cff](CITATION.cff).

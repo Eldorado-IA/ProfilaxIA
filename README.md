@@ -1,6 +1,6 @@
 # ProfilaxIA
 
-Protótipo acadêmico para recuperar evidências científicas e classificar sua relação com alegações de saúde. Trabalho coletivo da **Equipe Project NULL**, desenvolvido no **First Challenge da Residência em Inteligência Artificial do Instituto ELDORADO em parceria com a PUC Campinas**, em 2026.
+Protótipo acadêmico para recuperar evidências científicas e classificar sua relação com alegações de saúde, desenvolvido pela **Equipe Project NULL** no **First Challenge da Residência em Inteligência Artificial do Instituto ELDORADO em parceria com a PUC Campinas**, em 2026.
 
 O usuário apresenta uma pergunta de sim ou não. A aplicação gera uma alegação, recupera artigos no PubMed/PMC e organiza os trechos encontrados em três classes: **suporta**, **refuta** e **neutro**. Cada evidência mantém a identificação e o link do artigo de origem.
 
@@ -12,8 +12,8 @@ O usuário apresenta uma pergunta de sim ou não. A aplicação gera uma alegaç
 - [Metodologia e resultados](docs/METODOLOGIA.md)
 - [Como executar e reproduzir](docs/REPRODUCAO.md)
 - [Testes da API](README_TESTES.md)
-- [Autoria e procedência](CREDITOS.md)
-- [Mudanças desta organização](CHANGELOG.md)
+- [Créditos e referências](CREDITOS.md)
+- [Registro de mudanças](CHANGELOG.md)
 
 ## Problema e objetivo
 
@@ -35,7 +35,7 @@ A saída corresponde à relação entre **uma alegação e um trecho**. Ela não
 
 ## Resultados do modelo
 
-Resultados reproduzidos com o modelo `.pkl` e os **1.797 pares da matriz de validação** preservados na entrega. Não houve novo treinamento nesta verificação.
+Resultados da avaliação do modelo `.pkl` salvo sobre os **1.797 pares da matriz de validação** da entrega.
 
 | Métrica | Resultado |
 |---|---:|
@@ -75,7 +75,7 @@ python -m pip install -r requirements-test-lock.txt
 python -m pytest -v --junitxml=qa/resultados.xml
 ```
 
-O workflow em `.github/workflows/verificacoes.yml` prepara essas verificações para o GitHub Actions. Os resultados locais e o alcance de cada verificação estão em [Verificação da entrega](docs/VERIFICACAO.md).
+O workflow em `.github/workflows/verificacoes.yml` executa os testes da API e a compilação do frontend no GitHub Actions. As duas verificações foram aprovadas na [execução do commit `6a8a0ab`](https://github.com/Eldorado-IA/ProfilaxIA/actions/runs/42431631345). Os registros locais e o alcance das verificações estão em [Verificação técnica](docs/VERIFICACAO.md).
 
 ## Limitações
 
@@ -87,14 +87,10 @@ O workflow em `.github/workflows/verificacoes.yml` prepara essas verificações 
 - A curva de aprendizado histórica utiliza outro protocolo e não equivale à divisão fixa de validação.
 - A revisão não inclui avaliação por tema médico, teste de carga ou execução completa da consulta web com NCBI e todos os modelos reais.
 
-## Autoria e citação
+## Créditos e citação
 
-Este é um trabalho coletivo. O histórico Git preserva os registros da implementação original; a organização do repositório não transfere a autoria do projeto a quem o mantém. Consulte [Créditos](CREDITOS.md) e [CITATION.cff](CITATION.cff).
+Os créditos do projeto e as referências dos recursos utilizados estão em [CREDITOS.md](CREDITOS.md). Os metadados de citação do software estão em [CITATION.cff](CITATION.cff).
 
 Artigo de origem da base:
 
 Sarrouti, M.; Ben Abacha, A.; Mrabet, Y.; Demner-Fushman, D. **Evidence-based Fact-Checking of Health-related Claims**. Findings of EMNLP 2021, p. 3499–3512. DOI: [10.18653/v1/2021.findings-emnlp.297](https://doi.org/10.18653/v1/2021.findings-emnlp.297).
-
-## Direitos de uso
-
-Esta organização não atribui uma nova licença ao trabalho coletivo. A divulgação e o licenciamento devem observar os termos da residência e as autorizações aplicáveis. As fontes de dados e as dependências mantêm seus próprios termos de uso.

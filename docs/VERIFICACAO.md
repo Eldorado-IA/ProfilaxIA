@@ -1,8 +1,8 @@
-# Verificação da versão organizada
+# Verificação técnica do ProfilaxIA
 
-Esta página distingue o que foi verificado localmente da execução integral do produto. O histórico original da entrega é preservado; os registros atuais não substituem os documentos e resultados de outubro.
+Os registros abrangem os testes da API, a compilação do frontend, a inspeção dos dados e a avaliação do modelo salvo. Cada procedimento tem um escopo próprio, descrito a seguir.
 
-## Verificações executadas em 7 de novembro de 2026
+## Verificações locais de 7 de novembro de 2026
 
 | Verificação | Resultado | Registro |
 |---|---|---|
@@ -10,6 +10,17 @@ Esta página distingue o que foi verificado localmente da execução integral do
 | Frontend | TypeScript e build Vite concluídos | `results/preparation_checks.json` e `frontend/package-lock.json` |
 | Modelo salvo e validação | Acurácia 69,23%, F1 macro 66,71% e recall macro 66,39% | `results/validation_metrics.json` |
 | Planilha e matrizes | 13.303 pares; contagens e hashes registrados | `docs/data_manifest.json` |
+
+## GitHub Actions
+
+O workflow [Verificações do ProfilaxIA](https://github.com/Eldorado-IA/ProfilaxIA/actions/runs/42431631345) foi concluído com sucesso no commit `6a8a0ab4b3b2d7187d8e9fe817e046c4f4a7655f`, em 7 de novembro de 2026.
+
+| Job | Procedimento | Resultado |
+|---|---|---|
+| `api` | Instalação das dependências, execução do pytest e publicação das evidências | Aprovado |
+| `frontend` | Instalação com `npm ci` e compilação com `npm run build` | Aprovado |
+
+A configuração está em [`.github/workflows/verificacoes.yml`](../.github/workflows/verificacoes.yml). O job da API utiliza Python 3.12, e o do frontend utiliza Node 22.
 
 ## API
 
@@ -35,6 +46,6 @@ Não houve novo treino, geração de embeddings, nova seleção de modelo ou ava
 
 ## Execuções fora do escopo
 
-Nesta organização não foram executados Docker Compose completo, consulta ao NCBI com todos os modelos reais, avaliação de carga, avaliação por tema médico ou teste de interface no navegador.
+As verificações registradas não abrangem a execução integral com Docker Compose e todos os serviços reais, os testes de carga, a avaliação por tema médico ou a navegação na interface.
 
-O workflow do GitHub Actions foi preparado e sua estrutura foi conferida localmente. Sua execução remota dependerá do envio ao repositório da equipe; não há declaração de CI remota aprovada nesta preparação.
+Os registros dos testes da API de outubro de 2026 estão em [`docs/registros/api_2026-10-13`](registros/api_2026-10-13/relatorio.md).

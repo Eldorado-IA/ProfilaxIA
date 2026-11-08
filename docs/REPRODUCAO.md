@@ -76,4 +76,4 @@ python src/sup.py
 
 `teste_sup.py` é opcional para comparar classificadores. `prep.py` precede o treino, pois gera as matrizes e os rótulos. Essa sequência exige baixar modelos e mais recursos do que os testes leves.
 
-O relatório desta organização não representa uma nova execução completa do treino ou do conjunto de teste.
+As verificações documentadas utilizam o modelo salvo e o conjunto de validação. Os procedimentos de novo treinamento e avaliação do conjunto de teste são etapas distintas.

@@ -37,7 +37,7 @@ O F1 macro dá o mesmo peso às classes. A proximidade entre métricas globais n
 
 O script original utiliza `learning_curve` com `cv=3`, F1 macro e quatro tamanhos de treino. A apresentação mostra aproximadamente 0,98 no treino e 0,78 na curva de validação.
 
-Esse cálculo não corresponde à divisão fixa da tabela. O `cv=3` também não recebe os grupos de alegações do `GroupShuffleSplit`; uma mesma alegação pode aparecer em partições diferentes da curva. Portanto, a curva não oferece a mesma garantia de separação de alegações da divisão fixa e exige esse cuidado na interpretação.
+Esse cálculo utiliza um protocolo diferente da divisão fixa da tabela. O `cv=3` não recebe os grupos de alegações do `GroupShuffleSplit`, permitindo que uma mesma alegação apareça em partições diferentes da curva. Essa diferença de protocolo limita a comparação direta dos resultados.
 
 ## Alcance
 

@@ -37,7 +37,17 @@
   "markdown_links": {
     "errors": []
   },
-  "citation_metadata": "required fields checked; collective authorship",
-  "workflow": "YAML structure checked; not run on remote GitHub",
-  "full_live_stack_executed": false
+  "citation_metadata": "required CFF fields checked",
+  "workflow": "YAML structure checked locally",
+  "full_live_stack_executed": false,
+  "github_actions": {
+    "run_id": 42431631345,
+    "commit": "6a8a0ab4b3b2d7187d8e9fe817e046c4f4a7655f",
+    "url": "https://github.com/Eldorado-IA/ProfilaxIA/actions/runs/42431631345",
+    "conclusion": "success",
+    "jobs": {
+      "api": "success",
+      "frontend": "success"
+    }
+  }
 }

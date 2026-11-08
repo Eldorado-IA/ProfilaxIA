@@ -8,8 +8,8 @@
 | [Dados](DADOS.md) | Origem, contagens e diferenças entre versões |
 | [Metodologia](METODOLOGIA.md) | Representação, divisão, MLP e avaliação |
 | [Reprodução](REPRODUCAO.md) | Aplicação, testes, métricas salvas e treino |
-| [Verificações](VERIFICACAO.md) | Resultados e alcance das verificações locais |
-| [Transferência](TRANSFERENCIA.md) | Destino da equipe e preservação do histórico |
+| [Verificações](VERIFICACAO.md) | Resultados locais e no GitHub Actions, com o alcance de cada avaliação |
+| [Organização do repositório](TRANSFERENCIA.md) | Estrutura, histórico, arquivos e obtenção dos dados |
 
 ## Registros originais da entrega
 

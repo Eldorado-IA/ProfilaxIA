@@ -1,34 +1,36 @@
-# Preparação da transferência para a equipe
+# Organização do repositório
 
-## Destino
+## Versão publicada
 
-A proposta é criar um repositório **privado e vazio**, chamado `ProfilaxIA`, na organização `Eldorado-IA`. O nome proposto não indica que o destino já exista ou esteja publicado. Os repositórios `dataset` e `TesteProjetoIA` não serão substituídos.
+O repositório [Eldorado-IA/ProfilaxIA](https://github.com/Eldorado-IA/ProfilaxIA) reúne o código, os dados, o modelo e a documentação do First Challenge. A branch principal é `main`.
 
-## Histórico e acesso
+A consolidação dos arquivos e do histórico de implementação está registrada no commit [`6a8a0ab`](https://github.com/Eldorado-IA/ProfilaxIA/commit/6a8a0ab4b3b2d7187d8e9fe817e046c4f4a7655f). A procedência da implementação está descrita em [Créditos e referências](../CREDITOS.md).
 
-A base é a branch `modelo-producao` de `19loren/project-null`, commit `c3e3b63fdc61a2934da6729cfe7730eb375ed97a`. O histórico original foi preservado na cópia preparada. A nova organização não deve ser apresentada como criação exclusiva de quem a publica.
+## Estrutura
 
-A conta pessoal no navegador e a conexão utilizada para editar podem ter acessos diferentes. A conexão precisa conseguir consultar e escrever no destino privado. O administrador pode liberar apenas o repositório do ProfilaxIA.
+| Diretório | Conteúdo |
+|---|---|
+| `backend/` | API FastAPI e serviços de recuperação e classificação |
+| `frontend/` | Interface web React e TypeScript |
+| `src/` | Implementação de terminal e scripts de preparação e treinamento |
+| `data/` | Planilha preparada, matrizes, rótulos e modelo salvo |
+| `tests/` e `qa/` | Suíte da API e evidências de execução |
+| `docs/` | Documentação técnica e documentos da entrega |
+| `scripts/` e `results/` | Verificação dos artefatos e registros de resultados |
 
-## Publicação
+## Obtenção dos arquivos
 
-Criar o destino privado vazio, configurar seu endereço como um novo remoto e conferir a permissão de escrita. Enviar inicialmente a branch de organização para revisão. Não enviar essas mudanças ao repositório pessoal de origem por engano.
+Com Git e Git LFS instalados:
 
-O objeto Git LFS da matriz de treino também deve ser enviado ao destino. Um push Git sem o objeto não entrega o arquivo completo.
+```bash
+git clone https://github.com/Eldorado-IA/ProfilaxIA.git
+cd ProfilaxIA
+git lfs install
+git lfs pull
+```
 
-## Cópia para revisão
+A matriz `data/processed/X_train_emb.npy` utiliza Git LFS. Os hashes da planilha, do modelo e das matrizes estão em [`data_manifest.json`](data_manifest.json). As instruções da aplicação e dos experimentos estão em [Reprodução](REPRODUCAO.md).
 
-O arquivo ZIP da versão preparada contém os arquivos atuais, incluindo os dados e o modelo. Ele permite revisar e executar a cópia local, mas não transporta o histórico Git. A publicação com preservação de autoria e histórico deve partir da cópia Git preparada, ou de um clone da origem com as mudanças aplicadas, e incluir os objetos Git LFS.
+## Documentação e verificações
 
-## Conferência da entrega do link
-
-- Código, documentos, dados e modelo acessíveis aos membros autorizados.
-- Matriz Git LFS recuperável no novo destino.
-- Histórico e procedência preservados.
-- README e links internos válidos.
-- Verificações locais identificadas como locais; GitHub Actions identificado conforme a execução efetiva no novo destino.
-- Autoria e condições de divulgação alinhadas com a equipe e a residência.
-
-O script legado teve uma chave embutida removida da versão atual. Isso não elimina o valor do histórico original nem substitui sua eventual revogação pelo responsável. O histórico deve ser considerado ao definir a divulgação.
-
-Não adicionar licença unilateralmente, atribuir DOI inexistente ou apresentar esta preparação como artigo publicado. O `CITATION.cff` registra a equipe e o software.
+O [índice de documentação](README.md) reúne as referências técnicas e os documentos de outubro de 2026. Os testes da API, a compilação do frontend e a avaliação do modelo salvo estão descritos em [Verificação técnica](VERIFICACAO.md).

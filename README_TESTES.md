@@ -1,14 +1,13 @@
-# ProfilaxIA — testes mínimos da API
+# Testes da API do ProfilaxIA
 
-Suíte curta de seis testes de integração e contrato para o MVP do First Challenge.
+Suíte de seis testes de integração e contrato para a API do MVP do First Challenge.
 
 ## Versão de referência
 
-- Repositório original: https://github.com/19loren/project-null
-- Branch: `modelo-producao`
-- Commit: `c3e3b63fdc61a2934da6729cfe7730eb375ed97a`
+- Repositório: https://github.com/Eldorado-IA/ProfilaxIA
+- Implementação da API utilizada como referência: commit [`c3e3b63`](https://github.com/Eldorado-IA/ProfilaxIA/commit/c3e3b63fdc61a2934da6729cfe7730eb375ed97a).
 
-Os testes foram incorporados à versão organizada a partir dessa base. A suíte não altera o backend.
+Os testes exercitam essa implementação do backend. O histórico e a procedência do código estão em [Créditos e referências](CREDITOS.md).
 
 ## Escopo
 
@@ -34,8 +33,8 @@ inferência real e não testa a interface web no navegador.
 
 ## Como executar no Windows
 
-1. Obtenha a versão organizada do repositório, que já inclui a suíte.
-2. Abra o terminal na raiz. O ambiente utilizado foi Python 3.12.
+1. Clone o repositório, que inclui a suíte e suas dependências.
+2. Abra o terminal na raiz. Utilize Python 3.12.
 
 ```powershell
 python -m venv .venv-qa
@@ -62,4 +61,5 @@ execução diferente. O resultado da suíte deve ser citado com o escopo acima.
 Os registros atuais de `qa/` correspondem à execução local de 7 de novembro de
 2026: seis testes aprovados. Os registros recebidos do pacote de outubro foram
 preservados em `docs/registros/api_2026-10-13/`. Consulte também
-[Verificação da versão organizada](docs/VERIFICACAO.md).
+[Verificação técnica](docs/VERIFICACAO.md). A suíte também foi aprovada no
+[GitHub Actions](https://github.com/Eldorado-IA/ProfilaxIA/actions/runs/42431631345).
